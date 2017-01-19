@@ -6,6 +6,9 @@ class Program
     static void Main(string[] args)
     {
         ILog logger = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-        logger.Info("Hello World!");
+        for (int i = 0; i < 100; i++)
+        {
+            logger.Info("Hello World!");
+        }
     }
 }
